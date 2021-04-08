@@ -1,0 +1,217 @@
+.navbarBgc {
+  background-color: rgb(246, 213, 206) !important;
+}
+.navbarBgcTop {
+  background-color: rgb(246, 213, 206) !important;
+}
+.input-group-append {
+  background-color: rgb(246, 213, 206) !important;
+}
+
+a {
+  color: rgb(0, 0, 0) !important;
+}
+
+.nav-link {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 30px;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.35s ease;
+  margin: 7px;
+}
+
+.nav-link {
+  &::after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.35s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.nav-link.active {
+  color: #000 !important;
+  .cart-items {
+    background-color: #fff;
+    color: black;
+  }
+}
+.dropdown-item {
+  color: #000 !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(183, 110, 121) !important;
+  color: #fff !important;
+}
+.active {
+  color: #fff !important;
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.navbar {
+  padding: 0px;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100px;
+}
+
+.navbar.sticky {
+  opacity: 1;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(246, 213, 206) !important;
+  .brandMobile {
+    top: 18px;
+  }
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+.fa-shopping-cart {
+  position: relative;
+  cursor: pointer;
+}
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -7px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  font-size: 0.65em;
+  padding: 3px 5px;
+  color: white;
+  text-align: center;
+  z-index: -1;
+}
+.navbar-brand {
+  img {
+    width: 300px;
+    filter: brightness(0) invert(0);
+    padding: 0 !important;
+  }
+}
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topNavBarDelivery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  background-color: #000;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+  height: 50px;
+}
+.ptext {
+  top: 10px;
+  font-size: 1em;
+}
+
+@media (max-width: 990px) {
+  .navbar {
+    padding: 0 !important;
+  }
+  ul {
+    margin: 0;
+    background-color: rgb(246, 213, 206) !important;
+    display: inline-block;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .abs-center-x {
+    position: relative;
+    width: 100%;
+    background-color: rgb(246, 213, 206) !important;
+  }
+  .navbar-toggler {
+    line-height: 90px !important;
+  }
+  .navbar.sticky {
+    .navbar-toggler {
+      line-height: 70px !important;
+    }
+    opacity: 1;
+    padding: 5px;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(246, 213, 206) !important;
+  }
+  .brandMobile {
+    position: absolute;
+    width: 60% !important;
+    max-width: 300px !important;
+    padding: 0 !important;
+    filter: brightness(0) invert(0);
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+}
+@media (min-width: 280px) and (max-width: 768px) {
+  .navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .brandMobile {
+    position: absolute;
+    width: 70% !important;
+    max-width: 300px !important;
+    padding: 0 !important;
+    filter: brightness(0) invert(0);
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1197px) {
+  .abs-center-x {
+    position: absolute;
+    left: 45%;
+  }
+}
+@media (min-width: 991px) {
+  .brandMobile {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.bg-trans {
+  z-index: 3;
+  opacity: 1;
+}
+@media (max-width: 990px) {
+  .homePic {
+    min-width: 300px;
+    width: 100%;
+  }
+  .h1Home {
+    font-size: 2.5em;
+  }
+  .homePic {
+    position: relative;
+  }
+}
+@media (min-width: 280px) and (max-width: 768px) {
+  .h1Home {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) and (max-width: 1197px) {
+  .homePic {
+    width: 500px;
+  }
+}
+.linkText {
+  text-decoration: none !important;
+}
+.wrapper {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+.row {
+  overflow: hidden;
+}

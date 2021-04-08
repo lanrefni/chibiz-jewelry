@@ -1,0 +1,47 @@
+.form-control:focus {
+  border-color: rgb(246, 213, 206) !important;
+
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(183, 110, 121) !important;
+}
+.col-md-4 :hover {
+  .add-cart {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .prod-details-header {
+    transform: scale(0.9);
+    transform: translateY(-10px);
+  }
+  .cart-img {
+    transform: translateY(-10px);
+  }
+}
+button.add-cart {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+}
+.cart-img {
+  transition: all 0.4s ease-in-out;
+  transform: translateY(0px);
+}
+.prod-details-header {
+  transform: scale(1);
+  transform: translateY(0px);
+  transition: all 0.4s ease-in-out;
+}
+
+.card {
+  overflow: hidden;
+}
+.soldOutDiv {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+.soldOutText {
+}
+.btn-dark {
+  background-color: #000 !important;
+}
